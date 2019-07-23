@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project (bg_sub)
+set(CMAKE_MODULE_PATH ${CMAKE_INSTALL_PREFIX}/lib/cmake/ )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable(bg_sub bg_sub.cpp)
+target_link_libraries(bg_sub ${OpenCV_LIBS} )

@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project (create_board)
+set(CMAKE_MODULE_PATH ${CMAKE_INSTALL_PREFIX}/lib/cmake/ )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable(create_board create_board.cpp)
+target_link_libraries(create_board ${OpenCV_LIBS} )

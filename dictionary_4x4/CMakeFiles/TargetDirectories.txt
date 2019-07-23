@@ -1,0 +1,3 @@
+/home/matthew/marker_project/dictionary_test/CMakeFiles/rebuild_cache.dir
+/home/matthew/marker_project/dictionary_test/CMakeFiles/dictionary.dir
+/home/matthew/marker_project/dictionary_test/CMakeFiles/edit_cache.dir

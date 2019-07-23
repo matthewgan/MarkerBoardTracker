@@ -1,0 +1,3 @@
+/home/matthew/marker_project/aruco_samples/create_board/CMakeFiles/rebuild_cache.dir
+/home/matthew/marker_project/aruco_samples/create_board/CMakeFiles/create_board.exe.dir
+/home/matthew/marker_project/aruco_samples/create_board/CMakeFiles/edit_cache.dir

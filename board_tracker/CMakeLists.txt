@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project (board_tracker)
+set(CMAKE_MODULE_PATH ${CMAKE_INSTALL_PREFIX}/lib/cmake/ )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable(board_tracker board_tracker.cpp)
+target_link_libraries(board_tracker ${OpenCV_LIBS} )

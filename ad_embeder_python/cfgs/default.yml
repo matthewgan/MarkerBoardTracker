@@ -1,0 +1,43 @@
+# default common configs
+DATA_FOLDER: data
+OUTPUT_FOLDER: output
+FRAMES_FOLDER: frames
+DEBUG: True
+
+VIDEO_META:
+  META_JSON: meta.json
+
+AD_UNITS_EXTRACTION:
+  AD_UNITS_JSONS: ad_units_jsons
+  SHOTS_JSON: shots.json
+  AD_UNITS_JSON: ad_units_pts.json
+  AD_UNITS_INSTANCES_JSON: ad_units_instances.json
+
+  # shot boundary detection
+  THRESHOLD_SBD: 30
+
+  # ad units detection
+  THRESHOLD_ANGLE: 0.707 # \pi/4
+  THRESHOLD_AREA_MIN: 0.01 # 0.1 each side
+  THRESHOLD_AREA_MAX: 0.5 # ~0.7 each side
+  THRESHOLD_EDGE_RATIO: 0.5 #
+  THRESHOLD_FLOW: 5. # max motion distance
+  THRESHOLD_NMS_IOU: 0.8 #
+  THRESHOLD_LAST_TIMES_IOU: 0.85 # 
+  EPSILON: 0.1
+
+  # ad units filtering
+  THRESHOLD_LAST_TIMES: 60 # lasting times
+
+AD_UNITS_TRACKING:
+  MODIFIED_AD_UNITS_JSONS: modified_ad_units_jsons
+  AD_UNITS_INSTANCES_JSON: ad_units_instances.json # updated version
+
+  HISTOGRAM_EQUAL: False
+  KALMAN_SMOOTH: False # change to false to solve ad unit moving problem
+  ESTIMATE_SCALE: True
+  ESTIMATE_ROTATION: True
+
+AD_EMBEDDING:
+  ADS_FOLDER: ads
+  EMBEDDING_ALPHA: 0.8 

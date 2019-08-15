@@ -36,7 +36,7 @@ bool loadCameraCalibration(string name, Mat& cameraMatrix, Mat& distanceCoeffici
                 double read = 0.0f;
                 inStream >> read;
                 cameraMatrix.at<double>(r,c) = read;
-                cout << cameraMatrix.at<double>(r,c) << endl;
+                // cout << cameraMatrix.at<double>(r,c) << endl;
             }
         }
 
@@ -52,7 +52,7 @@ bool loadCameraCalibration(string name, Mat& cameraMatrix, Mat& distanceCoeffici
                 double read = 0.0f;
                 inStream >> read;
                 distanceCoefficients.at<double>(r,c) = read;
-                cout << distanceCoefficients.at<double>(r,c) << endl;
+                // cout << distanceCoefficients.at<double>(r,c) << endl;
             }
         }
 
@@ -94,8 +94,47 @@ static bool readMarkerBoardParameters(string filename)
 
 }
 
+void order_points(vector<Point2f> &pts)
+{
+    sort(pts.begin(), pts.end(), [](Point2f a, Point2f b) {
+        return a.x < b.x;
+    });
+
+ 
+
+    if (pts[0].y > pts[1].y)
+    {
+        swap(pts[0], pts[1]);
+    }
+    if (pts[2].y < pts[3].y)
+    {
+        swap(pts[2], pts[3]);
+    }
+    swap(pts[1], pts[3]);
+}
+
+namespace {
+const char* about = "replace board with one image";
+const char* keys  = "{@outfile |<none> | Output image }";
+}
+
 int main(int argc, char const *argv[])
 {
+    CommandLineParser parser(argc, argv, keys);
+    parser.about(about);
+
+    if(argc < 1) {
+        parser.printMessage();
+        return 0;
+    }
+
+    String img_filename = parser.get<String>(0);
+
+    if(!parser.check()) {
+        parser.printErrors();
+        return 0;
+    }
+
     try{
     int markersX = 4;
     int markersY = 6;
@@ -105,6 +144,7 @@ int main(int argc, char const *argv[])
     bool showRejected = false;
     bool refindStrategy = true;
     int camId = 2;
+    // string img_filename = "2.png";
 
     Mat cameraMatrix = Mat::eye(3,3,CV_64F);
     Mat distanceCoefficients;    
@@ -129,7 +169,7 @@ int main(int argc, char const *argv[])
     // create board object
     Ptr<aruco::GridBoard> gridboard = aruco::GridBoard::create(markersX, markersY, markerLength, markerSeparation, dictionary);
 
-    Mat logo = imread("logo.jpg");
+    Mat logo = imread(img_filename);
 
     // add image on the marker
     namedWindow("logo", CV_WINDOW_AUTOSIZE);
@@ -214,6 +254,14 @@ int main(int argc, char const *argv[])
 
             rect.points(outputQuad);
 
+            //add point order to tl, tr, br, rl
+            vector<Point2f> beforeOrder = {outputQuad[0], outputQuad[1], outputQuad[2], outputQuad[3]};
+            order_points(beforeOrder);
+            for(int i=0;i<4;i++)
+            {
+                outputQuad[i] = beforeOrder[i];
+            }
+
             //cout << logo.size << endl;
 
             //calculate alpha of the frame and apply alpha to logo
@@ -252,10 +300,10 @@ int main(int argc, char const *argv[])
             vector<Point> borderPoints;
             int border = 5;
             //LT
-            Point lt = Point(outputQuad[0].x - border, outputQuad[0].y + border);
-            Point rt = Point(outputQuad[1].x - border, outputQuad[1].y - border);
-            Point rb = Point(outputQuad[2].x + border, outputQuad[2].y - border);
-            Point lb = Point(outputQuad[3].x + border, outputQuad[3].y + border);
+            Point lt = Point(outputQuad[0].x - border, outputQuad[0].y - border);
+            Point rt = Point(outputQuad[1].x + border, outputQuad[1].y - border);
+            Point rb = Point(outputQuad[2].x + border, outputQuad[2].y + border);
+            Point lb = Point(outputQuad[3].x - border, outputQuad[3].y + border);
             borderPoints.push_back(lt);
             borderPoints.push_back(rt);
             borderPoints.push_back(rb);

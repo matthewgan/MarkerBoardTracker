@@ -30,8 +30,27 @@ int main(int argc, char *argv[]) {
     Mat boardImage;
     board->draw(imageSize, boardImage, margins, borderBits);
 
+    Mat boardGreenImage;
+    boardImage.copyTo(boardGreenImage);
+    for(int r=0;r<boardGreenImage.rows;r++)
+    {
+        for(int c=0;c<boardGreenImage.cols;c++)
+        {
+            Scalar color = boardGreenImage.at<Scalar>(r,c);
+            if(color == Scalar(0,0,0))
+            {
+                boardGreenImage.at<Scalar>(r,c) = Scalar(255,0,0);
+            }
+            if(color == Scalar(255,255,255))
+            {
+                boardGreenImage.at<Scalar>(r,c) = Scalar(0,0,255);
+            }
+        }
+    }
+
     if(showImage) {
         imshow("board", boardImage);
+        imshow("board_green", boardGreenImage);
         waitKey(0);
     }
 

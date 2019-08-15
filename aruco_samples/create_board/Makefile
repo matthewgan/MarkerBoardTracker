@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named create_board.exe
+# Target rules for targets named create_board
 
 # Build rule for target.
-create_board.exe: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 create_board.exe
-.PHONY : create_board.exe
+create_board: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 create_board
+.PHONY : create_board
 
 # fast build rule for target.
-create_board.exe/fast:
-	$(MAKE) -f CMakeFiles/create_board.exe.dir/build.make CMakeFiles/create_board.exe.dir/build
-.PHONY : create_board.exe/fast
+create_board/fast:
+	$(MAKE) -f CMakeFiles/create_board.dir/build.make CMakeFiles/create_board.dir/build
+.PHONY : create_board/fast
 
 create_board.o: create_board.cpp.o
 
@@ -129,7 +129,7 @@ create_board.o: create_board.cpp.o
 
 # target to build an object file
 create_board.cpp.o:
-	$(MAKE) -f CMakeFiles/create_board.exe.dir/build.make CMakeFiles/create_board.exe.dir/create_board.cpp.o
+	$(MAKE) -f CMakeFiles/create_board.dir/build.make CMakeFiles/create_board.dir/create_board.cpp.o
 .PHONY : create_board.cpp.o
 
 create_board.i: create_board.cpp.i
@@ -138,7 +138,7 @@ create_board.i: create_board.cpp.i
 
 # target to preprocess a source file
 create_board.cpp.i:
-	$(MAKE) -f CMakeFiles/create_board.exe.dir/build.make CMakeFiles/create_board.exe.dir/create_board.cpp.i
+	$(MAKE) -f CMakeFiles/create_board.dir/build.make CMakeFiles/create_board.dir/create_board.cpp.i
 .PHONY : create_board.cpp.i
 
 create_board.s: create_board.cpp.s
@@ -147,7 +147,7 @@ create_board.s: create_board.cpp.s
 
 # target to generate assembly for a file
 create_board.cpp.s:
-	$(MAKE) -f CMakeFiles/create_board.exe.dir/build.make CMakeFiles/create_board.exe.dir/create_board.cpp.s
+	$(MAKE) -f CMakeFiles/create_board.dir/build.make CMakeFiles/create_board.dir/create_board.cpp.s
 .PHONY : create_board.cpp.s
 
 # Help Target
@@ -157,7 +157,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... create_board.exe"
+	@echo "... create_board"
 	@echo "... edit_cache"
 	@echo "... create_board.o"
 	@echo "... create_board.i"

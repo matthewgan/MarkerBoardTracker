@@ -32,6 +32,6 @@
 *.app
 
 .vscode
-*/CMakeFiles/*
+*/CMakeFiles/
 cmake_install.cmake_install
-CMakeCache.txt
+*/CMakeCache.txt

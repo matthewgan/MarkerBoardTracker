@@ -9,9 +9,9 @@ using namespace cv;
 int main(int argc, char** argv){
     
     VideoCapture inputVideo;
-    inputVideo.open(2);
+    inputVideo.open(0);
 
-    Ptr<cv::aruco::Dictionary> dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::PREDEFINED_DICTIONARY_NAME::DICT_6X6_250);
+    Ptr<cv::aruco::Dictionary> dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::PREDEFINED_DICTIONARY_NAME::DICT_6X6_50);
     while (inputVideo.grab())
     {
         /* code */

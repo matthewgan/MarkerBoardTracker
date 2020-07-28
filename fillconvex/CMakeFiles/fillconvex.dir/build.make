@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthew/marker_project/fillconvex
+CMAKE_SOURCE_DIR = /home/matthew/MarkerBoardTracker/fillconvex
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthew/marker_project/fillconvex
+CMAKE_BINARY_DIR = /home/matthew/MarkerBoardTracker/fillconvex
 
 # Include any dependencies generated for this target.
 include CMakeFiles/fillconvex.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/fillconvex.dir/flags.make
 
 CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.o: CMakeFiles/fillconvex.dir/flags.make
 CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.o: fillconvexpoly.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthew/marker_project/fillconvex/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.o -c /home/matthew/marker_project/fillconvex/fillconvexpoly.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthew/MarkerBoardTracker/fillconvex/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.o -c /home/matthew/MarkerBoardTracker/fillconvex/fillconvexpoly.cpp
 
 CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthew/marker_project/fillconvex/fillconvexpoly.cpp > CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthew/MarkerBoardTracker/fillconvex/fillconvexpoly.cpp > CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.i
 
 CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthew/marker_project/fillconvex/fillconvexpoly.cpp -o CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthew/MarkerBoardTracker/fillconvex/fillconvexpoly.cpp -o CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.s
 
 CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.o.requires:
 
@@ -90,53 +90,58 @@ fillconvex_EXTERNAL_OBJECTS =
 
 fillconvex: CMakeFiles/fillconvex.dir/fillconvexpoly.cpp.o
 fillconvex: CMakeFiles/fillconvex.dir/build.make
-fillconvex: /usr/local/lib/libopencv_stitching.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_superres.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_videostab.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_aruco.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_bgsegm.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_bioinspired.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_ccalib.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_dnn_objdetect.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_dpm.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_face.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_freetype.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_fuzzy.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_hfs.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_img_hash.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_line_descriptor.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_optflow.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_reg.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_rgbd.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_saliency.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_stereo.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_structured_light.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_surface_matching.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_tracking.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_xfeatures2d.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_ximgproc.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_xobjdetect.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_xphoto.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_shape.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_phase_unwrapping.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_video.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_datasets.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_plot.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_text.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_dnn.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_ml.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_objdetect.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_calib3d.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_features2d.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_flann.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_highgui.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_videoio.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_imgcodecs.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_photo.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_imgproc.so.3.4.6
-fillconvex: /usr/local/lib/libopencv_core.so.3.4.6
+fillconvex: /usr/local/lib/libopencv_gapi.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_stitching.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_aruco.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_bgsegm.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_bioinspired.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_ccalib.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_dnn_objdetect.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_dnn_superres.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_dpm.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_face.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_freetype.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_fuzzy.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_hfs.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_img_hash.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_intensity_transform.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_line_descriptor.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_quality.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_rapid.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_reg.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_rgbd.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_saliency.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_stereo.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_structured_light.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_superres.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_surface_matching.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_tracking.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_videostab.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_xfeatures2d.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_xobjdetect.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_xphoto.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_shape.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_highgui.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_datasets.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_plot.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_text.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_dnn.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_ml.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_phase_unwrapping.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_optflow.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_ximgproc.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_video.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_videoio.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_imgcodecs.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_objdetect.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_calib3d.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_features2d.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_flann.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_photo.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_imgproc.so.4.4.0
+fillconvex: /usr/local/lib/libopencv_core.so.4.4.0
 fillconvex: CMakeFiles/fillconvex.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthew/marker_project/fillconvex/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable fillconvex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthew/MarkerBoardTracker/fillconvex/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable fillconvex"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fillconvex.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +158,6 @@ CMakeFiles/fillconvex.dir/clean:
 .PHONY : CMakeFiles/fillconvex.dir/clean
 
 CMakeFiles/fillconvex.dir/depend:
-	cd /home/matthew/marker_project/fillconvex && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthew/marker_project/fillconvex /home/matthew/marker_project/fillconvex /home/matthew/marker_project/fillconvex /home/matthew/marker_project/fillconvex /home/matthew/marker_project/fillconvex/CMakeFiles/fillconvex.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/matthew/MarkerBoardTracker/fillconvex && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthew/MarkerBoardTracker/fillconvex /home/matthew/MarkerBoardTracker/fillconvex /home/matthew/MarkerBoardTracker/fillconvex /home/matthew/MarkerBoardTracker/fillconvex /home/matthew/MarkerBoardTracker/fillconvex/CMakeFiles/fillconvex.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fillconvex.dir/depend
 

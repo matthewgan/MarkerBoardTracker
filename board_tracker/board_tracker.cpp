@@ -133,16 +133,20 @@ int main(int argc, char const *argv[])
 
     vector<vector<Point2f>> markerCorners, rejectedCandidates;
 
-    VideoCapture vid(2);
+    VideoCapture vid(0);
 
     if(!vid.isOpened())
     {
         return -1;
     }
 
-    namedWindow("before", CV_WINDOW_AUTOSIZE);
+    //namedWindow("before", CV_WINDOW_AUTOSIZE);
 
-    namedWindow("after", CV_WINDOW_AUTOSIZE);
+    //namedWindow("after", CV_WINDOW_AUTOSIZE);
+
+    namedWindow("before");
+
+    namedWindow("after");
 
     vector<Vec3d> rotaionVectors, translationVectors;
 

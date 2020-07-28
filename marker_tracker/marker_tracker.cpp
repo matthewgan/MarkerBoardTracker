@@ -26,7 +26,7 @@ void createArucoMarkers()
     {
         aruco::drawMarker(markerDictionary, i, 500, outputMarker, 1);
         ostringstream convert;
-        string imageName = "4x4Marker_";
+        string imageName = "6x6Marker_";
         convert << imageName << i << ".jpg";
         imwrite(convert.str(), outputMarker);
     }
@@ -181,14 +181,14 @@ int startWebCamMonitoring(const Mat& cameraMatrix, const Mat& distanceCoefficien
 
     Ptr<aruco::Dictionary> markerDictionary = aruco::getPredefinedDictionary(aruco::PREDEFINED_DICTIONARY_NAME::DICT_6X6_50);
 
-    VideoCapture vid(2);
+    VideoCapture vid(0);
 
     if(!vid.isOpened())
     {
         return -1;
     }
 
-    namedWindow("webcam", CV_WINDOW_AUTOSIZE);
+    namedWindow("webcam");
 
     vector<Vec3d> rotaionVectors, translationVectors;
 
@@ -237,7 +237,7 @@ void cameraCalibrationProcess(Mat& cameraMatrix, Mat& distanceCoefficients)
 
     int framesPerSecond = 20;
 
-    namedWindow("webcam", CV_WINDOW_AUTOSIZE);
+    namedWindow("webcam");
 
     while(true)
     {

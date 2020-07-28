@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project (transparent)
+set(CMAKE_MODULE_PATH ${CMAKE_INSTALL_PREFIX}/lib/cmake/ )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable(transparent transparent.cpp)
+target_link_libraries(transparent ${OpenCV_LIBS} )

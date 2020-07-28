@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthew/marker_project/dictionary_6x6
+CMAKE_SOURCE_DIR = /home/matthew/MarkerBoardTracker/dictionary_6x6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthew/marker_project/dictionary_6x6
+CMAKE_BINARY_DIR = /home/matthew/MarkerBoardTracker/dictionary_6x6
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dictionary.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/dictionary.dir/flags.make
 
 CMakeFiles/dictionary.dir/dictionary.cpp.o: CMakeFiles/dictionary.dir/flags.make
 CMakeFiles/dictionary.dir/dictionary.cpp.o: dictionary.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthew/marker_project/dictionary_6x6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dictionary.dir/dictionary.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dictionary.dir/dictionary.cpp.o -c /home/matthew/marker_project/dictionary_6x6/dictionary.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthew/MarkerBoardTracker/dictionary_6x6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dictionary.dir/dictionary.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dictionary.dir/dictionary.cpp.o -c /home/matthew/MarkerBoardTracker/dictionary_6x6/dictionary.cpp
 
 CMakeFiles/dictionary.dir/dictionary.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dictionary.dir/dictionary.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthew/marker_project/dictionary_6x6/dictionary.cpp > CMakeFiles/dictionary.dir/dictionary.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthew/MarkerBoardTracker/dictionary_6x6/dictionary.cpp > CMakeFiles/dictionary.dir/dictionary.cpp.i
 
 CMakeFiles/dictionary.dir/dictionary.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dictionary.dir/dictionary.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthew/marker_project/dictionary_6x6/dictionary.cpp -o CMakeFiles/dictionary.dir/dictionary.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthew/MarkerBoardTracker/dictionary_6x6/dictionary.cpp -o CMakeFiles/dictionary.dir/dictionary.cpp.s
 
 CMakeFiles/dictionary.dir/dictionary.cpp.o.requires:
 
@@ -90,53 +90,58 @@ dictionary_EXTERNAL_OBJECTS =
 
 dictionary: CMakeFiles/dictionary.dir/dictionary.cpp.o
 dictionary: CMakeFiles/dictionary.dir/build.make
-dictionary: /usr/local/lib/libopencv_stitching.so.3.4.6
-dictionary: /usr/local/lib/libopencv_superres.so.3.4.6
-dictionary: /usr/local/lib/libopencv_videostab.so.3.4.6
-dictionary: /usr/local/lib/libopencv_aruco.so.3.4.6
-dictionary: /usr/local/lib/libopencv_bgsegm.so.3.4.6
-dictionary: /usr/local/lib/libopencv_bioinspired.so.3.4.6
-dictionary: /usr/local/lib/libopencv_ccalib.so.3.4.6
-dictionary: /usr/local/lib/libopencv_dnn_objdetect.so.3.4.6
-dictionary: /usr/local/lib/libopencv_dpm.so.3.4.6
-dictionary: /usr/local/lib/libopencv_face.so.3.4.6
-dictionary: /usr/local/lib/libopencv_freetype.so.3.4.6
-dictionary: /usr/local/lib/libopencv_fuzzy.so.3.4.6
-dictionary: /usr/local/lib/libopencv_hfs.so.3.4.6
-dictionary: /usr/local/lib/libopencv_img_hash.so.3.4.6
-dictionary: /usr/local/lib/libopencv_line_descriptor.so.3.4.6
-dictionary: /usr/local/lib/libopencv_optflow.so.3.4.6
-dictionary: /usr/local/lib/libopencv_reg.so.3.4.6
-dictionary: /usr/local/lib/libopencv_rgbd.so.3.4.6
-dictionary: /usr/local/lib/libopencv_saliency.so.3.4.6
-dictionary: /usr/local/lib/libopencv_stereo.so.3.4.6
-dictionary: /usr/local/lib/libopencv_structured_light.so.3.4.6
-dictionary: /usr/local/lib/libopencv_surface_matching.so.3.4.6
-dictionary: /usr/local/lib/libopencv_tracking.so.3.4.6
-dictionary: /usr/local/lib/libopencv_xfeatures2d.so.3.4.6
-dictionary: /usr/local/lib/libopencv_ximgproc.so.3.4.6
-dictionary: /usr/local/lib/libopencv_xobjdetect.so.3.4.6
-dictionary: /usr/local/lib/libopencv_xphoto.so.3.4.6
-dictionary: /usr/local/lib/libopencv_shape.so.3.4.6
-dictionary: /usr/local/lib/libopencv_phase_unwrapping.so.3.4.6
-dictionary: /usr/local/lib/libopencv_video.so.3.4.6
-dictionary: /usr/local/lib/libopencv_datasets.so.3.4.6
-dictionary: /usr/local/lib/libopencv_plot.so.3.4.6
-dictionary: /usr/local/lib/libopencv_text.so.3.4.6
-dictionary: /usr/local/lib/libopencv_dnn.so.3.4.6
-dictionary: /usr/local/lib/libopencv_ml.so.3.4.6
-dictionary: /usr/local/lib/libopencv_objdetect.so.3.4.6
-dictionary: /usr/local/lib/libopencv_calib3d.so.3.4.6
-dictionary: /usr/local/lib/libopencv_features2d.so.3.4.6
-dictionary: /usr/local/lib/libopencv_flann.so.3.4.6
-dictionary: /usr/local/lib/libopencv_highgui.so.3.4.6
-dictionary: /usr/local/lib/libopencv_videoio.so.3.4.6
-dictionary: /usr/local/lib/libopencv_imgcodecs.so.3.4.6
-dictionary: /usr/local/lib/libopencv_photo.so.3.4.6
-dictionary: /usr/local/lib/libopencv_imgproc.so.3.4.6
-dictionary: /usr/local/lib/libopencv_core.so.3.4.6
+dictionary: /usr/local/lib/libopencv_gapi.so.4.4.0
+dictionary: /usr/local/lib/libopencv_stitching.so.4.4.0
+dictionary: /usr/local/lib/libopencv_aruco.so.4.4.0
+dictionary: /usr/local/lib/libopencv_bgsegm.so.4.4.0
+dictionary: /usr/local/lib/libopencv_bioinspired.so.4.4.0
+dictionary: /usr/local/lib/libopencv_ccalib.so.4.4.0
+dictionary: /usr/local/lib/libopencv_dnn_objdetect.so.4.4.0
+dictionary: /usr/local/lib/libopencv_dnn_superres.so.4.4.0
+dictionary: /usr/local/lib/libopencv_dpm.so.4.4.0
+dictionary: /usr/local/lib/libopencv_face.so.4.4.0
+dictionary: /usr/local/lib/libopencv_freetype.so.4.4.0
+dictionary: /usr/local/lib/libopencv_fuzzy.so.4.4.0
+dictionary: /usr/local/lib/libopencv_hfs.so.4.4.0
+dictionary: /usr/local/lib/libopencv_img_hash.so.4.4.0
+dictionary: /usr/local/lib/libopencv_intensity_transform.so.4.4.0
+dictionary: /usr/local/lib/libopencv_line_descriptor.so.4.4.0
+dictionary: /usr/local/lib/libopencv_quality.so.4.4.0
+dictionary: /usr/local/lib/libopencv_rapid.so.4.4.0
+dictionary: /usr/local/lib/libopencv_reg.so.4.4.0
+dictionary: /usr/local/lib/libopencv_rgbd.so.4.4.0
+dictionary: /usr/local/lib/libopencv_saliency.so.4.4.0
+dictionary: /usr/local/lib/libopencv_stereo.so.4.4.0
+dictionary: /usr/local/lib/libopencv_structured_light.so.4.4.0
+dictionary: /usr/local/lib/libopencv_superres.so.4.4.0
+dictionary: /usr/local/lib/libopencv_surface_matching.so.4.4.0
+dictionary: /usr/local/lib/libopencv_tracking.so.4.4.0
+dictionary: /usr/local/lib/libopencv_videostab.so.4.4.0
+dictionary: /usr/local/lib/libopencv_xfeatures2d.so.4.4.0
+dictionary: /usr/local/lib/libopencv_xobjdetect.so.4.4.0
+dictionary: /usr/local/lib/libopencv_xphoto.so.4.4.0
+dictionary: /usr/local/lib/libopencv_shape.so.4.4.0
+dictionary: /usr/local/lib/libopencv_highgui.so.4.4.0
+dictionary: /usr/local/lib/libopencv_datasets.so.4.4.0
+dictionary: /usr/local/lib/libopencv_plot.so.4.4.0
+dictionary: /usr/local/lib/libopencv_text.so.4.4.0
+dictionary: /usr/local/lib/libopencv_dnn.so.4.4.0
+dictionary: /usr/local/lib/libopencv_ml.so.4.4.0
+dictionary: /usr/local/lib/libopencv_phase_unwrapping.so.4.4.0
+dictionary: /usr/local/lib/libopencv_optflow.so.4.4.0
+dictionary: /usr/local/lib/libopencv_ximgproc.so.4.4.0
+dictionary: /usr/local/lib/libopencv_video.so.4.4.0
+dictionary: /usr/local/lib/libopencv_videoio.so.4.4.0
+dictionary: /usr/local/lib/libopencv_imgcodecs.so.4.4.0
+dictionary: /usr/local/lib/libopencv_objdetect.so.4.4.0
+dictionary: /usr/local/lib/libopencv_calib3d.so.4.4.0
+dictionary: /usr/local/lib/libopencv_features2d.so.4.4.0
+dictionary: /usr/local/lib/libopencv_flann.so.4.4.0
+dictionary: /usr/local/lib/libopencv_photo.so.4.4.0
+dictionary: /usr/local/lib/libopencv_imgproc.so.4.4.0
+dictionary: /usr/local/lib/libopencv_core.so.4.4.0
 dictionary: CMakeFiles/dictionary.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthew/marker_project/dictionary_6x6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable dictionary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthew/MarkerBoardTracker/dictionary_6x6/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable dictionary"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dictionary.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +158,6 @@ CMakeFiles/dictionary.dir/clean:
 .PHONY : CMakeFiles/dictionary.dir/clean
 
 CMakeFiles/dictionary.dir/depend:
-	cd /home/matthew/marker_project/dictionary_6x6 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthew/marker_project/dictionary_6x6 /home/matthew/marker_project/dictionary_6x6 /home/matthew/marker_project/dictionary_6x6 /home/matthew/marker_project/dictionary_6x6 /home/matthew/marker_project/dictionary_6x6/CMakeFiles/dictionary.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/matthew/MarkerBoardTracker/dictionary_6x6 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthew/MarkerBoardTracker/dictionary_6x6 /home/matthew/MarkerBoardTracker/dictionary_6x6 /home/matthew/MarkerBoardTracker/dictionary_6x6 /home/matthew/MarkerBoardTracker/dictionary_6x6 /home/matthew/MarkerBoardTracker/dictionary_6x6/CMakeFiles/dictionary.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dictionary.dir/depend
 

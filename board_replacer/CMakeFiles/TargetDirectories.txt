@@ -1,3 +1,0 @@
-/home/matthew/marker_project/board_replacer/CMakeFiles/rebuild_cache.dir
-/home/matthew/marker_project/board_replacer/CMakeFiles/board_replacer.dir
-/home/matthew/marker_project/board_replacer/CMakeFiles/edit_cache.dir
